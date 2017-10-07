@@ -1,0 +1,279 @@
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+  border: 0;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  color: #000000;
+  width: 100%;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 100;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.content{
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 90px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 40px;
+  color: #ff9c00;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: underline;
+  margin: 25px 0 40px 0;
+  font-family: "Myriuad pro reqular";
+}
+.wrap-center {
+  max-width: 1200px;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+header .logo {
+  background: url("../img/logo.png") no-repeat;
+  width: 256px;
+  height: 106px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+header nav {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+header .main-menu li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 70px;
+}
+
+header .main-menu li a:hover,
+header .main-menu li .active {
+  color: #ffb540;
+  text-decoration: underline;
+}
+
+header .main-menu li:last-child {
+  margin-right: 0;
+}
+
+header .main-menu li a::before {
+  content: "";
+  background: url("../img/menu-icons.png") no-repeat;
+  width: 60px;
+  height: 50px;
+  display: block;
+}
+
+header .main-menu li:nth-child(2) a::before {
+  background-position: -56px 0px;
+}
+
+header .main-menu li:nth-child(3) a::before {
+  background-position: -120px 0px;
+}
+
+header .main-menu li:nth-child(4) a::before {
+  background-position: -181px 0px;
+}
+
+header .main-menu li:nth-child(5) a::before {
+  background-position: -240px 0px;
+}
+
+header .main-menu li a {
+  font-size: 22px;
+  color: #9e9b9b;
+  display: block;
+}
+
+.slider {
+  background: url("../img/slider.jpg") no-repeat;
+  background-size: cover;
+  border: 4px #fcba50 solid;
+  box-sizing: border-box;
+  padding: 100px 0 110px 0;
+}
+
+.slider .slider-text {
+  display: inline-block;
+}
+
+.slider .slider-text p,
+.slider .slider-text h1 {
+  font-size: 37px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fb9c06;
+}
+
+.slider .slider-text .orange-backgr {
+  background: rgba(255, 175, 18, 0.7);
+  margin-top: 30px;
+  color: #6e6d6b;
+}
+
+.news {
+  padding-top: 30px;
+  border-bottom: solid 1px #f2f2f2;
+}
+
+.news article {
+  width: 20%;
+  display: inline-block;
+  margin: 0 5% 3% 0;
+  vertical-align: top;
+}
+
+.news article:nth-child(4n) {
+  margin-right: 0;
+}
+
+.news article a {
+  color: #fcba50;
+  display: block;
+  text-align: right;
+}
+
+.news article a:hover {
+  color: #6e6d6b;
+  text-decoration: underline;
+}
+
+.meet-team li {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.meet-team li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.meet-team figcaption {
+  text-align: left;
+}
+
+.meet-team .meat-team-img {
+  margin-bottom: 25px;
+}
+
+.meet-team .meat-team-img img {
+  border: 10px #fcba50 solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.meet-team .meat-team-img a {
+  display: block;
+}
+
+.meet-team .meat-team-img a:hover img {
+  background: linear-gradient(to top, #fefcea, #f1da36);
+}
+
+.meet-team .team-title {
+  color: #6e6d6b;
+  font-size: 22px;
+}
+
+.meet-team .team-title span {
+  color: #fb9c06;
+}
+
+.contacts {
+  position: relative;
+  min-height: 300px;
+}
+
+.contacts label {
+  display: block;
+  font-size: 24px;
+  color: #fb9c06;
+  margin-bottom: 35px;
+  overflow: hidden;
+  font-family: "Myriuad pro reqular";
+}
+
+.contacts input,
+.contacts textarea {
+  height: 30px;
+  width: 88%;
+  float: right;
+  background: #f8f7f6;
+}
+
+.contacts textarea {
+  height: 90px;
+}
+
+.contacts button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+button {
+  width: 175px;
+  height: 50px;
+  font-size: 30px;
+  background: #fb9c06;
+  color: #fff;
+}
+
+footer {
+  background: #fcba50;
+  height: 75px;
+  margin-top: -75px;
+  color: #ffffff;
+  font-size: 33px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer p {
+  line-height: 75px;
+  font-family: "Myriuad pro reqular";
+}
