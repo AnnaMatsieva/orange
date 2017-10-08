@@ -1,15 +1,15 @@
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0 auto;
   border: 0;
-  font-size: 100%;
   outline: 0;
   padding: 0;
-  color: #000000;
-  width: 100%;
-  font-family: 'Calibri', sans-serif;
   font-weight: 100;
+  font-size: 100%;
+  color: #000000;
+  font-family: 'Calibri', sans-serif;
 }
 
 .wrapper {
@@ -19,7 +19,7 @@ body {
 .content{
   box-sizing: border-box;
   min-height: 100%;
-  padding-bottom: 90px;
+  padding-bottom: 75px;
 }
 
 ul {
@@ -131,6 +131,7 @@ header .main-menu li a {
   border: 4px #fcba50 solid;
   box-sizing: border-box;
   padding: 100px 0 110px 0;
+  min-width: 960px;
 }
 
 .slider .slider-text {
@@ -211,7 +212,9 @@ header .main-menu li a {
 }
 
 .meet-team .meat-team-img a:hover img {
-  background: linear-gradient(to top, #fefcea, #f1da36);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(74,79,79,0.82);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(74,79,79,0.82);
+  box-shadow: 0px 0px 20px 0px rgba(74,79,79,0.82);
 }
 
 .meet-team .team-title {
@@ -261,6 +264,8 @@ button {
   font-size: 30px;
   background: #fb9c06;
   color: #fff;
+  cursor: pointer;
+  border-color: #fb9c06;
 }
 
 footer {
@@ -271,6 +276,7 @@ footer {
   font-size: 33px;
   text-align: center;
   text-transform: uppercase;
+  min-width: 960px;
 }
 
 footer p {
