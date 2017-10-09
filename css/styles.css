@@ -16,7 +16,7 @@ body {
   height: 100%;
 }
 
-.content{
+.content {
   box-sizing: border-box;
   min-height: 100%;
   padding-bottom: 90px;
@@ -52,6 +52,7 @@ h2 {
   margin: 25px 0 40px 0;
   font-family: "Myriuad pro reqular";
 }
+
 .wrap-center {
   max-width: 1200px;
   min-width: 960px;
@@ -63,7 +64,7 @@ header {
   padding-bottom: 20px;
 }
 
-header .logo {
+.logo {
   background: url("../img/logo.png") no-repeat;
   width: 256px;
   height: 106px;
@@ -72,30 +73,30 @@ header .logo {
   top: 10px;
 }
 
-header nav {
+.main-menu {
   display: inline-block;
   position: absolute;
   right: 0;
   top: 20px;
 }
 
-header .main-menu li {
+.main-menu li {
   display: inline-block;
   text-align: center;
   margin-right: 70px;
 }
 
-header .main-menu li a:hover,
-header .main-menu li .active {
+.main-menu a:hover,
+.main-menu .active {
   color: #ffb540;
   text-decoration: underline;
 }
 
-header .main-menu li:last-child {
+.main-menu li:last-child {
   margin-right: 0;
 }
 
-header .main-menu li a::before {
+.main-menu a::before {
   content: "";
   background: url("../img/menu-icons.png") no-repeat;
   width: 60px;
@@ -103,23 +104,23 @@ header .main-menu li a::before {
   display: block;
 }
 
-header .main-menu li:nth-child(2) a::before {
+.about a::before {
   background-position: -56px 0px;
 }
 
-header .main-menu li:nth-child(3) a::before {
+.work a::before {
   background-position: -120px 0px;
 }
 
-header .main-menu li:nth-child(4) a::before {
+.blog a::before {
   background-position: -181px 0px;
 }
 
-header .main-menu li:nth-child(5) a::before {
+.contact a::before {
   background-position: -240px 0px;
 }
 
-header .main-menu li a {
+.main-menu a {
   font-size: 22px;
   color: #9e9b9b;
   display: block;
@@ -132,16 +133,15 @@ header .main-menu li a {
   border-left: none;
   border-right: none;
   box-sizing: border-box;
-  padding: 100px 0 110px 0;
+  padding: 100px 0 110px;
   min-width: 960px;
 }
 
-.slider .slider-text {
+.slider-text {
   display: inline-block;
 }
 
-.slider .slider-text p,
-.slider .slider-text h1 {
+.slider-text p {
   font-size: 37px;
   text-transform: uppercase;
   font-weight: bold;
@@ -150,7 +150,7 @@ header .main-menu li a {
   color: #fb9c06;
 }
 
-.slider .slider-text .orange-backgr {
+.slider-text .orange-backgr {
   background: rgba(255, 175, 18, 0.7);
   margin-top: 30px;
   color: #6e6d6b;
@@ -198,37 +198,35 @@ header .main-menu li a {
   text-align: left;
 }
 
-.meet-team .meat-team-img {
+.meat-team-img {
   margin-bottom: 25px;
 }
 
-.meet-team .meat-team-img img {
+.meat-team-img img {
   border: 10px #fcba50 solid;
   border-radius: 50%;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-.meet-team .meat-team-img a {
+.meat-team-img a {
   display: block;
 }
 
-.meet-team .meat-team-img a:hover img {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(74,79,79,0.82);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(74,79,79,0.82);
+.meat-team-img a:hover img {
   box-shadow: 0px 0px 20px 0px rgba(74,79,79,0.82);
 }
 
-.meet-team .team-title {
+.team-title {
   color: #6e6d6b;
   font-size: 22px;
 }
 
-.meet-team .team-title span {
+.team-title span {
   color: #fb9c06;
 }
 
-.meet-team .team-title:hover {
+.team-title:hover {
   color: #fb9c06;
   text-decoration: underline;
 }
@@ -274,6 +272,10 @@ button {
   color: #fff;
   cursor: pointer;
   border: none;
+}
+
+button:hover {
+  box-shadow: 0px 0px 20px 0px rgba(74,79,79,0.82);
 }
 
 footer {
