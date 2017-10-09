@@ -129,6 +129,8 @@ header .main-menu li a {
   background: url("../img/slider.jpg") no-repeat;
   background-size: cover;
   border: 4px #fcba50 solid;
+  border-left: none;
+  border-right: none;
   box-sizing: border-box;
   padding: 100px 0 110px 0;
   min-width: 960px;
@@ -226,6 +228,11 @@ header .main-menu li a {
   color: #fb9c06;
 }
 
+.meet-team .team-title:hover {
+  color: #fb9c06;
+  text-decoration: underline;
+}
+
 .contacts {
   position: relative;
   min-height: 300px;
@@ -250,6 +257,7 @@ header .main-menu li a {
 
 .contacts textarea {
   height: 90px;
+  resize: none;
 }
 
 .contacts button {
@@ -265,7 +273,7 @@ button {
   background: #fb9c06;
   color: #fff;
   cursor: pointer;
-  border-color: #fb9c06;
+  border: none;
 }
 
 footer {
